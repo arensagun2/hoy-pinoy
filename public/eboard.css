@@ -1,0 +1,95 @@
+/* Body, All */
+body {
+    font-family: 'Arial', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #000080;
+    border-bottom: blue solid 5px;
+    text-align: center;
+}
+header #logo {
+    float: left;
+    font-family: 'Indie Flower', sans-serif;
+    color: white;
+    font-size: 15px/1.5;
+}
+header nav {
+    float: right;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li {
+    padding-left: 3rem;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.nav-links li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.nav-links li a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+.nav-links #active{
+    font-weight: bold;
+    color: lightslategray;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.nav-links #active:hover {
+    color: white;
+    text-decoration: none;
+}
+header:hover {
+    cursor: default;
+}
+
+/* Soon */
+#soon {
+    padding: 50px;
+    cursor: default;
+}
+#soon span:hover {
+    color: darkgoldenrod;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+footer:hover {
+    cursor: default;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    box-shadow: inset 0 0 5px black;
+}
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+}

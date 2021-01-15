@@ -1,0 +1,219 @@
+/* Body, All */
+body {
+    font-family: 'Arial', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #000080;
+    border-bottom: blue solid 5px;
+    text-align: center;
+}
+header #logo {
+    float: left;
+    font-family: 'Indie Flower', sans-serif;
+    color: white;
+    font-size: 15px/1.5;
+}
+header nav {
+    float: right;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li {
+    padding-left: 3rem;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.nav-links li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.nav-links li a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+.nav-links #active{
+    font-weight: bold;
+    color: lightslategray;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.nav-links #active:hover {
+    color: white;
+    text-decoration: none;
+}
+header:hover {
+    cursor: default;
+}
+
+/* Calendars */
+#main {
+    box-shadow: inset 0 0 10px black;
+    padding: 30px 0px;
+    animation-name: main;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+#calendar-1 {
+    padding: 20px 10px;
+}
+#calendar-1 .container{
+    overflow-x: auto;
+}
+#calendar-1 table{
+    border: 1px solid black;
+    width: 100%;
+    padding: 0px 0px;
+    float: left;
+    background-color: lightblue;
+}
+#calendar-1 th {
+    border: 1px solid black;
+    padding: 15px;
+}
+#calendar-1 td {
+    border: 1px solid black;
+    padding: 1.5rem;
+    transition: all;
+    transition-duration: 0.5s;
+    overflow: auto;
+}
+#calendar-1 caption {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Indie Flower', sans-serif;
+}
+#calendar-1 td p {
+    font-size: 0.8em;
+    text-decoration: none;
+}
+#calendar-1 td a {
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+#calendar-1 ul {
+    margin: 0;
+    padding: 0;
+}
+#calendar-1 td span {
+    font-size: 0.8em;
+    text-decoration: none;
+}
+#calendar-1 td:hover{
+    background-color: black;
+    opacity: 60%;
+    color: white;
+    text-decoration: underline;
+    border-radius: 1rem;
+}
+#calendar-1 table:hover {
+    cursor: default;
+}
+#calendar-1 td span:hover {
+    color: yellow;
+}
+
+#calendar-2 {
+    padding: 20px 10px;
+}
+#calendar-2 .container{
+    overflow-x: auto;
+}
+#calendar-2 table{
+    border: 1px solid black;
+    width: 100%;
+    padding: 0px 0px;
+    background-color: lightblue;
+}
+#calendar-2 th {
+    border: 1px solid black;
+    padding: 15px;
+}
+#calendar-2 td {
+    border: 1px solid black;
+    padding: 1.5rem;
+    transition: all;
+    transition-duration: 0.5s;
+    overflow: auto;
+}
+#calendar-2 caption {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Indie Flower', sans-serif;
+}
+#calendar-2 td p {
+    font-size: 0.8em;
+    text-decoration: none;
+}
+#calendar-2 td a {
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+#calendar-2 ul {
+    margin: 0;
+    padding: 0;
+}
+#calendar-2 td span {
+    font-size: 0.8em;
+    text-decoration: none;
+}
+#calendar-2 td:hover {
+    background-color: black;
+    opacity: 60%;
+    color: white;
+    text-decoration: underline;
+    border-radius: 1rem;
+}
+#calendar-2 table:hover {
+    cursor: default;
+}
+#calendar-2 td span:hover {
+    color: yellow;
+}
+@keyframes main {
+    0%{box-shadow: inset 0 0 10px black;}
+    25%{box-shadow: inset 0 0 25px blue;}
+    50%{box-shadow: inset 0 0 50px red;}
+    75%{box-shadow: inset 0 0 75px yellow;}
+    100%{box-shadow: inset 0 0 100px black;}
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+footer:hover {
+    cursor: default;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    box-shadow: inset 0 0 5px black;
+}
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+}

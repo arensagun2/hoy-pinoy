@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HP | Calendar</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.24.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.24.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.24.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.24.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.24.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/7.24.0/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/7.24.0/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/7.24.0/firebase-performance.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="icon" href="./pictures/HoyPinoyLogo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&display=swap" rel="stylesheet">
+  </head>
+  <body id="body">
+    <main>
+        <header>
+            <div class="container">
+              <div id="logo">
+                <h1>UMB Hoy Pinoy</h1>
+              </div>
+              <nav>
+                <ul class="nav-links">
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./calendar.html" id="active">Calendar</a></li>
+                  <li><a href="./socials.html">Socials</a></li>
+                  <li><a href="./eboard.html">E-Board</a></li>
+                </ul>
+              </nav>
+            </div>
+        </header>
+        <section id="main">
+            <section id="calendar-1">
+                <div class="container">
+                    <table>
+                        <caption>November</caption>
+                        <thead>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                            </tr>    
+                            <tr>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11
+                                    <ul>
+                                        <li><span title="Holiday!">Veteran's Day</span></li>
+                                    </ul>
+                                </td>
+                                <td>12
+                                    <ul>
+                                        <li><span title="6-8 PM">UML TFC Merry Thankholimas!</span></li>
+                                    </ul>
+                                </td>
+                                <td>13
+                                    <ul>
+                                        <li><p>Secret Santa <a href="https://docs.google.com/forms/d/e/1FAIpQLSdw0zvjZQCK6No-_WaqR7caQzHu_8TqJOtDFaXZc1Jl5OOmgQ/viewform">Google Forms</a></p></li>
+                                        <li><span title="6 PM">ASC Movie Night</span></li>
+                                    </ul>
+                                    
+                                </td>
+                                <td>14
+                                    <ul>
+                                        <li><span title="1 PM">PAMANA College Event</span></li>
+                                        <li><span title="By Morning">Give out Secret Santa</span></li>
+                                        <li><span title="with Luisa Igloria and Dom-an Macagne | 7:30 PM - 9:30 PM">Speaker</span></li>
+                                        <li><span title="9 AM - 4 PM">Dialogue</span></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15
+                                    <ul>
+                                        <li><span title="Due Date">E-Board Intro Video</span></li>
+                                    </ul>
+                                </td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19<p></p></td>
+                                <td>20
+                                    <ul>
+                                        <li><span title="Deadline">Pass/Fail and Course Withdrawal</span></li>
+                                    </ul>
+                                </td>
+                                <td>21</td>
+                            </tr>    
+                            <tr>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26
+                                    <ul>
+                                        <li><span title="Holiday">Thanksgiving Day</span></li>
+                                    </ul>
+                                </td>
+                                <td>27
+                                    <ul>
+                                        <li><span title="Secret Santa">Mail Gifts</span></li>
+                                        <li><span title="Due Date">Kamayan Video</span></li>
+                                        <li><span title="$0 in my bank account">Black Friday</span></li>
+                                    </ul>
+                                </td>
+                                <td>28</td>
+                            </tr>    
+                            <tr>
+                                <td>29</td>
+                                <td>30</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="calendar-2">
+                <div class="container">
+                    <table>
+                        <caption>December</caption>
+                        <thead>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                            </tr>    
+                            <tr>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12
+                                    <ul>
+                                        <li><span title="Yay?">Classes End</span></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15
+                                    <ul>
+                                        <li><span title="Well...">Kamayan</span></li>
+                                    </ul>
+                                </td>
+                                <td>16
+                                    <ul>
+                                        <li><span title="GLHF">Finals</span></li>
+                                    </ul>
+                                </td>
+                                <td>17
+                                    <ul>
+                                        <li><span title="GLHF">Finals</span></li>
+                                    </ul>
+                                </td>
+                                <td>18
+                                    <ul>
+                                        <li><span title="GLHF">Finals</span></li>
+                                    </ul>
+                                </td>
+                                <td>19</td>
+                            </tr>    
+                            <tr>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25
+                                    <ul>
+                                        <li><span title="Jolly">Christmas</span></li>
+                                    </ul>
+                                </td>
+                                <td>26</td>
+                            </tr>    
+                            <tr>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+        <footer>
+            <div class="container">
+                <p>University of Massachusetts Boston Hoy! Pinoy!, Copyright &#169 2020</p>
+            </div>
+        </footer>
+    </main>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.24.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.24.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="calendar.js"></script>
+
+  </body>
+</html>
